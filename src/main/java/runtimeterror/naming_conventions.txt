@@ -1,0 +1,5 @@
+Files: an_example_file.extension
+Classes: AnExampleClass
+Functions: anExampleFunction
+Variables: an_example_variable
+FXML Files: AnExampleFXMLFile.fxml
