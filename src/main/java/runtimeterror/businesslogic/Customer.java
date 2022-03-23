@@ -1,6 +1,6 @@
 package runtimeterror.businesslogic;
 
-import runtimeterror.utlities.IdDispenser;
+import runtimeterror.utilities.IdDispenser;
 
 import java.io.FileNotFoundException;
 

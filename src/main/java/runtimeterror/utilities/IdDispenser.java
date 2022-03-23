@@ -1,4 +1,4 @@
-package runtimeterror.utlities;
+package runtimeterror.utilities;
 
 import java.io.File;
 import java.io.FileNotFoundException;
