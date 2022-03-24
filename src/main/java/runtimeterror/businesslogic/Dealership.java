@@ -1,5 +1,7 @@
 package runtimeterror.businesslogic;
 
+import java.io.FileNotFoundException;
+
 public class Dealership {
     private final String name;
     private CustomerList customers;
@@ -29,6 +31,10 @@ public class Dealership {
 
     public Employee authenticateEmployee(String username, String password) {
         return employees.authenticateEmployee(username, password);
+    }
+
+    public void addCustomer(String customer_name, int customer_account_number, String username, String password) throws FileNotFoundException {
+        this.customers.addCustomer(customer_name, customer_account_number, username, password);
     }
 }
 

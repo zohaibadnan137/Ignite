@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.SplashScreenEventHandler">
-   <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="480.0" prefWidth="240.0" style="-fx-background-color: #E74D15;" />
-   </children>
-</AnchorPane>
