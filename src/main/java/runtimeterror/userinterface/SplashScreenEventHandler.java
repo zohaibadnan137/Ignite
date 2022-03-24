@@ -18,6 +18,7 @@ public class SplashScreenEventHandler {
         Stage primaryStage = new Stage();
         primaryStage.setTitle("Customer Login");
         primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
         primaryStage.show();
         ((Node) (event.getSource())).getScene().getWindow().hide();
     }
@@ -28,6 +29,7 @@ public class SplashScreenEventHandler {
         Stage primaryStage = new Stage();
         primaryStage.setTitle("Employee Login");
         primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
         primaryStage.show();
         ((Node) (event.getSource())).getScene().getWindow().hide();
     }
