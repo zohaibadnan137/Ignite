@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class SplashScreenEventHandler {
-
     @FXML
     private void loadCustomerLoginScreen(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));

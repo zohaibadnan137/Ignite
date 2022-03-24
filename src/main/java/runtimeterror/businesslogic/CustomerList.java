@@ -15,4 +15,11 @@ public class CustomerList {
             customers = new ArrayList<>();
         customers.add(new Customer(customer_name, customer_account_number, username, password));
     }
+
+    public Customer authenticateCustomer(String username, String password) {
+        for (Customer customer : customers)
+            if (customer.authenticateCustomer(username, password))
+                return customer;
+        return null;
+    }
 }
