@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #9d131f;">
+         <children>
+            <Label layoutX="68.0" layoutY="55.0" text="Welcome, " textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="customer_name" layoutX="34.0" layoutY="82.0" text="Customer!" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="36.0" />
+               </font>
+            </Label>
+            <Polygon fill="TRANSPARENT" layoutX="-179.0" layoutY="393.0" points="292.1999816894531, -50.399993896484375, 380.79998779296875, 107.0, 405.0, -97.20004272460938" stroke="#cc4436" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-155.0" layoutY="410.0" points="256.79998779296875, -161.19993591308594, 204.79998779296875, -91.59994506835938, 168.79998779296875, -231.5999298095703" stroke="#750916" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-489.0" layoutY="261.0" points="730.7999877929688, -76.99992370605469, 602.2000122070312, 57.39990234375, 602.2000122070312, -45.60002136230469" stroke="#f0c75e" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="20.0" layoutY="439.0" points="161.0, -70.199951171875, 265.79998779296875, -142.99993896484375, 125.79998779296875, -210.19993591308594" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-314.0" layoutY="238.0" points="223.0, 37.199920654296875, 290.20001220703125, 108.4000244140625, 415.79998779296875, -52.39994812011719" stroke="#cc4436" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-124.0" layoutY="556.0" points="291.4000244140625, -191.2000732421875, 154.60000610351562, -67.199951171875, 136.20001220703125, -180.00006103515625" stroke="#750916" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-574.0" layoutY="504.0" points="783.0, 31.99993896484375, 645.4000244140625, -28.7999267578125, 651.7999877929688, -111.99993896484375" stroke="#f0c75e" strokeType="INSIDE" strokeWidth="5.0" />
+         </children>
+      </AnchorPane>
+      <Polygon fill="TRANSPARENT" layoutX="-197.0" layoutY="536.0" points="155.40000915527344, -29.200042724609375, 294.0, -219.2000732421875, 124.39999389648438, -151.39990234375" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+      <GridPane layoutX="300.0" layoutY="140.0" prefHeight="325.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Browse the catalogue" textFill="WHITE" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Book a car" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Manage bookings" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Schedule a test drive" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Schedule an inspection" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="File a complaint" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Submit a query" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="View query history" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Vew complaint history" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label layoutX="319.0" layoutY="74.0" text="What would you like to do?" textFill="#9d131f">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

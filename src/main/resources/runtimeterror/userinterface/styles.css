@@ -1,0 +1,20 @@
+.car {
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5;
+
+    -fx-border-color: #d3d3d3;
+    -fx-border-radius: 5;
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #d3d3d3;
+    -fx-background-radius: 0em;
+}
