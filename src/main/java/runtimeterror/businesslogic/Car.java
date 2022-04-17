@@ -12,13 +12,15 @@ public class Car {
     private final int fuel_tank_capacity;
     private final int weight;
     private ArrayList<Variant> variants;
+    private final String image_source;
 
-    public Car(String manufacturer, String model, int fuel_tank_capacity, int weight) throws FileNotFoundException {
+    public Car(String manufacturer, String model, int fuel_tank_capacity, int weight, String image_source) throws FileNotFoundException {
         this.car_id = IdDispenser.getID();
         this.manufacturer = manufacturer;
         this.model = model;
         this.fuel_tank_capacity = fuel_tank_capacity;
         this.weight = weight;
+        this.image_source = image_source;
     }
 
     public int getCarId() {
@@ -39,5 +41,17 @@ public class Car {
 
     public int getWeight() {
         return weight;
+    }
+
+    public String getManufacturerAndModel() {
+        return manufacturer + " " + model;
+    }
+
+    public String getImageSource() {
+        return image_source;
+    }
+
+    public int getPrice() {
+        return 25000;
     }
 }

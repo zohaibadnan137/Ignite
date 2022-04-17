@@ -36,5 +36,9 @@ public class Dealership {
     public void addCustomer(String customer_name, int customer_account_number, String username, String password) throws FileNotFoundException {
         this.customers.addCustomer(customer_name, customer_account_number, username, password);
     }
+
+    public Catalogue getCatalogue() {
+        return catalogue;
+    }
 }
 

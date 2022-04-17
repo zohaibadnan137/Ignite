@@ -18,7 +18,17 @@ public class Main extends Application {
         dealership.start();
         dealership.addCustomer("Hozaib", 12345, "zo", "zo123");
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SplashScreen.fxml")));
+        for (int count = 0; count < 10; count++) {
+            dealership.getCatalogue().addCar("Honda", "Civic", 40, 1800, "honda_civic.png");
+            dealership.getCatalogue().addCar("Toyota", "Corolla", 40, 1800, "toyota_corolla.png");
+            dealership.getCatalogue().addCar("Mitsubishi", "Lancer", 40, 1800, "mitsubishi_lancer.png");
+            dealership.getCatalogue().addCar("Mercedes", "C Class", 40, 1800, "mercedes_cclass.png");
+            dealership.getCatalogue().addCar("Audi", "TT", 40, 1800, "audi_tt.png");
+            dealership.getCatalogue().addCar("Porsche", "Cayman", 40, 1800, "porsche_caymanspider.png");
+            dealership.getCatalogue().addCar("Mercdes", "GLK Class", 40, 1800, "mercedes_glk.png");
+        }
+
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Catalogue.fxml")));
         primaryStage.setTitle("Ignite");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
