@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.EmployeeLoginEventHandler">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #9d131f;">
+         <children>
+            <Polygon fill="TRANSPARENT" layoutX="-179.0" layoutY="393.0" points="292.1999816894531, -50.399993896484375, 380.79998779296875, 107.0, 405.0, -97.20004272460938" stroke="#cc4436" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-155.0" layoutY="410.0" points="256.79998779296875, -161.19993591308594, 204.79998779296875, -91.59994506835938, 168.79998779296875, -231.5999298095703" stroke="#750916" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-489.0" layoutY="261.0" points="730.7999877929688, -76.99992370605469, 602.2000122070312, 57.39990234375, 602.2000122070312, -45.60002136230469" stroke="#f0c75e" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="20.0" layoutY="439.0" points="161.0, -70.199951171875, 265.79998779296875, -142.99993896484375, 125.79998779296875, -210.19993591308594" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-314.0" layoutY="238.0" points="223.0, 37.199920654296875, 290.20001220703125, 108.4000244140625, 415.79998779296875, -52.39994812011719" stroke="#cc4436" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-124.0" layoutY="556.0" points="291.4000244140625, -191.2000732421875, 154.60000610351562, -67.199951171875, 136.20001220703125, -180.00006103515625" stroke="#750916" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-574.0" layoutY="504.0" points="783.0, 31.99993896484375, 645.4000244140625, -28.7999267578125, 651.7999877929688, -111.99993896484375" stroke="#f0c75e" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-180.0" layoutY="196.0" points="197.6666717529297, -99.99993133544922, 380.33331298828125, -67.33326721191406, 216.99998474121094, -177.99993896484375" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-531.0" layoutY="52.0" points="756.6666259765625, -14.66659927368164, 583.3333129882812, 34.00005340576172, 741.3333129882812, -75.3332748413086" stroke="#f0c75e" strokeType="INSIDE" strokeWidth="5.0" />
+            <Polygon fill="TRANSPARENT" layoutX="-203.0" layoutY="180.0" points="282.0, -15.333267211914062, 442.0, -37.99993896484375, 428.6666259765625, -117.33328247070312" stroke="#cc4436" strokeType="INSIDE" strokeWidth="5.0" />
+         </children>
+      </AnchorPane>
+      <Polygon fill="TRANSPARENT" layoutX="-197.0" layoutY="536.0" points="155.40000915527344, -29.200042724609375, 294.0, -219.2000732421875, 124.39999389648438, -151.39990234375" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+      <Label layoutX="348.0" layoutY="128.0" text="Employee Login" textFill="#9d131f">
+         <font>
+            <Font name="SansSerif Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="400.0" layoutY="222.0" onMouseClicked="#start" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #9d131f; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="400.0" layoutY="265.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #9d131f; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Polygon fill="TRANSPARENT" layoutX="-224.0" layoutY="325.0" points="294.3333435058594, -196.33326721191406, 183.0, -142.33326721191406, 194.33334350585938, -209.66659545898438" stroke="#750916" strokeType="INSIDE" strokeWidth="5.0" />
+      <Button layoutX="412.0" layoutY="376.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="invalidCredentials" alignment="CENTER" layoutX="337.0" layoutY="317.0" prefHeight="30.0" prefWidth="300.0" textFill="#d90429">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
