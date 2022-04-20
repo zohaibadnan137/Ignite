@@ -7,10 +7,11 @@ import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 
 public class Query {
-    private int query_id;
-    private int customer_id;
-    private DateTime date_time;
-    private String query_content;
+    private final int query_id;
+    private final int customer_id;
+    private final DateTime date_time;
+    private final String query_content;
+    private String status;
 
     public Query(int customer_id, String query_content) throws FileNotFoundException {
         this.query_id = IdDispenser.getID();
@@ -21,5 +22,31 @@ public class Query {
                 now.getMonthValue(), now.getYear());
 
         this.query_content = query_content;
+        status = "Active";
     }
+
+    public int getQueryId() {
+        return query_id;
+    }
+
+    public int getCustomerId() {
+        return customer_id;
+    }
+
+    private DateTime getQueryDateTime() {
+        return date_time;
+    }
+
+    private String getQueryContent() {
+        return query_content;
+    }
+
+    private String getStatus() {
+        return status;
+    }
+
+    private void closeQuery() {
+        status = "Closed";
+    }
+
 }

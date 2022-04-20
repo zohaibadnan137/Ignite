@@ -25,7 +25,7 @@ public class Main extends Application {
             dealership.getCatalogue().addCar("Mercedes", "C Class", 40, 1800, "mercedes_cclass.png");
             dealership.getCatalogue().addCar("Audi", "TT", 40, 1800, "audi_tt.png");
             dealership.getCatalogue().addCar("Porsche", "Cayman", 40, 1800, "porsche_caymanspider.png");
-            dealership.getCatalogue().addCar("Mercdes", "GLK Class", 40, 1800, "mercedes_glk.png");
+            dealership.getCatalogue().addCar("Mercedes", "GLK Class", 40, 1800, "mercedes_glk.png");
         }
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Catalogue.fxml")));

@@ -11,7 +11,7 @@ public class Car {
     private final String model;
     private final int fuel_tank_capacity;
     private final int weight;
-    private ArrayList<Variant> variants;
+    private final ArrayList<Variant> variants;
     private final String image_source;
 
     public Car(String manufacturer, String model, int fuel_tank_capacity, int weight, String image_source) throws FileNotFoundException {
@@ -20,6 +20,7 @@ public class Car {
         this.model = model;
         this.fuel_tank_capacity = fuel_tank_capacity;
         this.weight = weight;
+        variants = new ArrayList<>();
         this.image_source = image_source;
     }
 
@@ -47,11 +48,29 @@ public class Car {
         return manufacturer + " " + model;
     }
 
+    public ArrayList<Variant> getVariants() {
+        return variants;
+    }
+
     public String getImageSource() {
         return image_source;
     }
 
     public int getPrice() {
         return 25000;
+    }
+
+    public int getStartingPrice() {
+        int min_price = Integer.MAX_VALUE;
+        for (Variant var : variants) {
+            if (var.getPrice() < min_price)
+                min_price = var.getPrice();
+        }
+        return min_price;
+    }
+
+    public void addVariant(String variant_name, int engine_capacity, String transmission, int horsepower, float zero_to_sixty, int price) {
+        Variant var = new Variant(car_id, variant_name, engine_capacity, transmission, horsepower, zero_to_sixty, price);
+        variants.add(var);
     }
 }

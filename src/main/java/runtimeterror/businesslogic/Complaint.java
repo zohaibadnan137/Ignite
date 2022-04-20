@@ -7,10 +7,11 @@ import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 
 public class Complaint {
-    private int complaint_id;
-    private int customer_id;
-    private DateTime date_time;
-    private String complaint_content;
+    private final int complaint_id;
+    private final int customer_id;
+    private final DateTime date_time;
+    private final String complaint_content;
+    private String status;
 
     public Complaint(int customer_id, String complaint_content) throws FileNotFoundException {
         this.complaint_id = IdDispenser.getID();
@@ -21,5 +22,30 @@ public class Complaint {
                 now.getMonthValue(), now.getYear());
 
         this.complaint_content = complaint_content;
+        status = "Active";
+    }
+
+    public int getComplaintId() {
+        return complaint_id;
+    }
+
+    public int getCustomerId() {
+        return customer_id;
+    }
+
+    public DateTime getComplaintDateTime() {
+        return date_time;
+    }
+
+    public String getComplaintContent() {
+        return complaint_content;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void closeComplaint() {
+        status = "Closed";
     }
 }
