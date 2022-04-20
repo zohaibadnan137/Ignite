@@ -14,6 +14,8 @@ import javafx.stage.Stage;
 import runtimeterror.businesslogic.DealershipFactory;
 import runtimeterror.businesslogic.Employee;
 
+import java.util.Objects;
+
 public class EmployeeLoginEventHandler {
     @FXML
     private PasswordField password;
@@ -31,11 +33,11 @@ public class EmployeeLoginEventHandler {
 
     @FXML
     private void login(ActionEvent event) {
-        Employee current_employee = DealershipFactory.getDealership().authenticateEmployee(username.getText(), password.getText());
+        Employee current_employee = DealershipFactory.getDealership().getEmployees().authenticateEmployee(username.getText(), password.getText());
 
         if (current_employee != null) {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("MainInterface.fxml"));
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MainInterface.fxml")));
                 Stage primaryStage = new Stage();
                 primaryStage.setTitle("Employee Login");
                 primaryStage.setScene(new Scene(root));

@@ -9,16 +9,16 @@
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.CustomerMenuEventHandler">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #9d131f;">
          <children>
-            <Label layoutX="68.0" layoutY="55.0" text="Welcome, " textFill="WHITE">
+            <Label layoutX="68.0" layoutY="54.0" text="Welcome, " textFill="WHITE">
                <font>
                   <Font name="SansSerif Regular" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="customer_name" layoutX="34.0" layoutY="82.0" text="Customer!" textFill="WHITE">
+            <Label fx:id="customer_name" alignment="CENTER" layoutX="15.0" layoutY="82.0" prefHeight="42.0" prefWidth="220.0" text="Customer!" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="SansSerif Bold" size="36.0" />
                </font>

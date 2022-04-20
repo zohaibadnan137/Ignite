@@ -15,8 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Dealership dealership = DealershipFactory.getDealership("Ignite");
-        dealership.start();
-        dealership.addCustomer("Hozaib", 12345, "zo", "zo123");
+        dealership.getCustomers().addCustomer("Hozaib", 12345, "zo", "zo123");
 
         for (int count = 0; count < 10; count++) {
             dealership.getCatalogue().addCar("Honda", "Civic", 40, 1800, "honda_civic.png");
@@ -28,7 +27,7 @@ public class Main extends Application {
             dealership.getCatalogue().addCar("Mercedes", "GLK Class", 40, 1800, "mercedes_glk.png");
         }
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Catalogue.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SplashScreen.fxml")));
         primaryStage.setTitle("Ignite");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
