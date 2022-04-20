@@ -4,10 +4,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
+import javafx.stage.Stage;
 import runtimeterror.businesslogic.Car;
 import runtimeterror.businesslogic.DealershipFactory;
 
@@ -15,6 +20,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class CatalogueEventHandler implements Initializable {
@@ -74,5 +80,16 @@ public class CatalogueEventHandler implements Initializable {
 
             GridPane.setMargin(anchorpane, new Insets(10));
         }
+    }
+
+    @FXML
+    public void loadMainMenu(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CustomerMenu.fxml")));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("Customer Menu");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        ((Node) (event.getSource())).getScene().getWindow().hide();
     }
 }

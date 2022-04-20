@@ -15,10 +15,9 @@ public class QuerySuccessEventHandler {
 
     @FXML
     private void redirect(ActionEvent event) throws IOException {
-        //Add the main menu fxml in the code-line below
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MainInterface.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CustomerMenu.fxml")));
         Stage primaryStage = new Stage();
-        primaryStage.setTitle("Customer Login");
+        primaryStage.setTitle("Customer Menu");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
         primaryStage.show();

@@ -47,7 +47,7 @@
             <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Browse the catalogue" textFill="WHITE" GridPane.halignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#browseCatalogue" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Browse the catalogue" textFill="WHITE" GridPane.halignment="CENTER">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
@@ -72,12 +72,12 @@
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="File a complaint" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#fileComplaint" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="File a complaint" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Submit a query" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#submitQuery" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Submit a query" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>

@@ -56,20 +56,18 @@ public class Car {
         return image_source;
     }
 
-    public int getPrice() {
-        return 25000;
-    }
-
     public int getStartingPrice() {
         int min_price = Integer.MAX_VALUE;
         for (Variant var : variants) {
             if (var.getPrice() < min_price)
                 min_price = var.getPrice();
         }
+        if (min_price == Integer.MAX_VALUE)
+            min_price = 0;
         return min_price;
     }
 
-    public void addVariant(String variant_name, int engine_capacity, String transmission, int horsepower, float zero_to_sixty, int price) {
+    public void addVariant(String variant_name, int engine_capacity, String transmission, int horsepower, double zero_to_sixty, int price) {
         Variant var = new Variant(car_id, variant_name, engine_capacity, transmission, horsepower, zero_to_sixty, price);
         variants.add(var);
     }

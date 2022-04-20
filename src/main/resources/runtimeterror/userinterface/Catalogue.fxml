@@ -17,6 +17,11 @@
                   <Font name="SansSerif Bold" size="24.0" />
                </font>
             </Label>
+            <Label layoutX="763.0" layoutY="17.0" onMouseClicked="#loadMainMenu" text="Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <HBox layoutX="12.0" layoutY="60.0" prefHeight="425.0" prefWidth="825.0">
