@@ -12,7 +12,7 @@
     <children>
         <VBox alignment="TOP_CENTER" prefHeight="175.0" prefWidth="250.0">
             <children>
-                <ImageView fx:id="car_image" fitHeight="95.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="car_image" fitHeight="95.0" onMouseClicked="#loadCarSpecification" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@honda_civic.png" />
                     </image>

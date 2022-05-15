@@ -6,10 +6,10 @@ public class Variant {
     private final int engine_capacity;
     private final String transmission;
     private final int horsepower;
-    private final float zero_to_sixty;
+    private final double zero_to_sixty;
     private final int price;
 
-    public Variant(int car_id, String variant_name, int engine_capacity, String transmission, int horsepower, float zero_to_sixty, int price) {
+    public Variant(int car_id, String variant_name, int engine_capacity, String transmission, int horsepower, double zero_to_sixty, int price) {
         this.car_id = car_id;
         this.variant_name = variant_name;
         this.engine_capacity = engine_capacity;
@@ -35,7 +35,7 @@ public class Variant {
         return horsepower;
     }
 
-    public float getZeroToSixty() {
+    public double getZeroToSixty() {
         return zero_to_sixty;
     }
 

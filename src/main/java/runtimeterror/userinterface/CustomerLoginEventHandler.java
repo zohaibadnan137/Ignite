@@ -13,6 +13,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import runtimeterror.businesslogic.Customer;
 import runtimeterror.businesslogic.DealershipFactory;
+import runtimeterror.businesslogic.ObjectHolder;
+
+import java.util.Objects;
 
 public class CustomerLoginEventHandler {
     @FXML
@@ -31,11 +34,13 @@ public class CustomerLoginEventHandler {
 
     @FXML
     private void login(ActionEvent event) {
-        Customer current_customer = DealershipFactory.getDealership().authenticateCustomer(username.getText(), password.getText());
+        Customer current_customer = DealershipFactory.getDealership().getCustomers().authenticateCustomer(username.getText(), password.getText());
 
         if (current_customer != null) {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("MainInterface.fxml"));
+                ObjectHolder.getInstance().setCustomer(current_customer);
+
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CustomerMenu.fxml")));
                 Stage primaryStage = new Stage();
                 primaryStage.setTitle("Customer Login");
                 primaryStage.setScene(new Scene(root));

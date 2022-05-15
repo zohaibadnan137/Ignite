@@ -9,16 +9,16 @@
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.CustomerMenuEventHandler">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #9d131f;">
          <children>
-            <Label layoutX="68.0" layoutY="55.0" text="Welcome, " textFill="WHITE">
+            <Label layoutX="68.0" layoutY="54.0" text="Welcome, " textFill="WHITE">
                <font>
                   <Font name="SansSerif Regular" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="customer_name" layoutX="34.0" layoutY="82.0" text="Customer!" textFill="WHITE">
+            <Label fx:id="customer_name" alignment="CENTER" layoutX="15.0" layoutY="82.0" prefHeight="42.0" prefWidth="220.0" text="Customer!" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="SansSerif Bold" size="36.0" />
                </font>
@@ -47,7 +47,7 @@
             <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Browse the catalogue" textFill="WHITE" GridPane.halignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#browseCatalogue" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Browse the catalogue" textFill="WHITE" GridPane.halignment="CENTER">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
@@ -72,12 +72,12 @@
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="File a complaint" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#fileComplaint" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="File a complaint" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Submit a query" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#submitQuery" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Submit a query" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
