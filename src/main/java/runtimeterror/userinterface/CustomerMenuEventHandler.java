@@ -19,7 +19,7 @@ public class CustomerMenuEventHandler {
     private Label customer_name;
 
     public void initialize() {
-        customer_name.setText(ObjectHolder.getInstance().getCustomer().getCustomerName() + "!");
+        customer_name.setText(ObjectHolder.getInstance().getCustomer().getCustomerFirstName() + "!");
     }
 
     @FXML

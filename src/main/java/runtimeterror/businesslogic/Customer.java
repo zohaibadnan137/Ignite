@@ -7,14 +7,17 @@ import java.io.FileNotFoundException;
 public class Customer {
 
     private final int customer_id;
-    private final String customer_name;
+    private final String customer_first_name;
+
+    private final String customer_last_name;
     private final int customer_account_number;
     private final String username;
     private final String password;
 
-    public Customer(String customer_name, int customer_account_number, String username, String password) throws FileNotFoundException {
+    public Customer(String customer_first_name, String customer_last_name, int customer_account_number, String username, String password) throws FileNotFoundException {
         this.customer_id = IdDispenser.getID();
-        this.customer_name = customer_name;
+        this.customer_first_name = customer_first_name;
+        this.customer_last_name = customer_last_name;
         this.customer_account_number = customer_account_number;
         this.username = username;
         this.password = password;
@@ -24,8 +27,12 @@ public class Customer {
         return customer_id;
     }
 
-    public String getCustomerName() {
-        return customer_name;
+    public String getCustomerFirstName() {
+        return customer_first_name;
+    }
+
+    public String getCustomerLastName() {
+        return customer_last_name;
     }
 
     public int getCustomerAccountNumber() {

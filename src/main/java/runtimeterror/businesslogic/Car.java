@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 public class Car {
     private final int car_id;
+
+    private final String year;
     private final String manufacturer;
     private final String model;
     private final int fuel_tank_capacity;
@@ -14,8 +16,9 @@ public class Car {
     private final ArrayList<Variant> variants;
     private final String image_source;
 
-    public Car(String manufacturer, String model, int fuel_tank_capacity, int weight, String image_source) throws FileNotFoundException {
+    public Car(String year, String manufacturer, String model, int fuel_tank_capacity, int weight, String image_source) throws FileNotFoundException {
         this.car_id = IdDispenser.getID();
+        this.year = year;
         this.manufacturer = manufacturer;
         this.model = model;
         this.fuel_tank_capacity = fuel_tank_capacity;
@@ -26,6 +29,10 @@ public class Car {
 
     public int getCarId() {
         return car_id;
+    }
+
+    public String getYear() {
+        return year;
     }
 
     public String getManufacturer() {
@@ -44,7 +51,7 @@ public class Car {
         return weight;
     }
 
-    public String getManufacturerAndModel() {
+    public String getLongCarName() {
         return manufacturer + " " + model;
     }
 

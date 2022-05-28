@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="250.0" styleClass="car" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.CarEventHandler">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="250.0" styleClass="car" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.CarEventHandler">
     <children>
-        <VBox alignment="TOP_CENTER" prefHeight="175.0" prefWidth="250.0">
-            <children>
-                <ImageView fx:id="car_image" fitHeight="95.0" onMouseClicked="#loadCarSpecification" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@honda_civic.png" />
-                    </image>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-                </ImageView>
-                <Label fx:id="car_name" text="Honda Civic">
-                    <font>
-                        <Font name="SansSerif Regular" size="24.0" />
-                    </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-                </Label>
-                <Label fx:id="car_price" text="Rs. 3,500,000">
-                    <font>
-                        <Font name="SansSerif Regular" size="18.0" />
-                    </font>
-                </Label>
-            </children>
-        </VBox>
+        <ImageView fx:id="car_image" fitHeight="170.0" fitWidth="250.0" layoutX="12.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@2018_honda_civic.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="car_name" alignment="CENTER" layoutX="25.0" layoutY="26.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" text="Honda Civic">
+            <font>
+                <Font name="SansSerif Regular" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="car_price" alignment="CENTER" layoutX="25.0" layoutY="153.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" text="Rs. 35,999,999">
+            <font>
+                <Font name="SansSerif Regular" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="car_year" alignment="CENTER" layoutX="25.0" layoutY="11.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" text="2016">
+            <font>
+                <Font name="SansSerif Regular" size="14.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>

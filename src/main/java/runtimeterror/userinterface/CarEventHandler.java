@@ -26,9 +26,13 @@ public class CarEventHandler {
     @FXML
     private Label car_price;
 
+    @FXML
+    private Label car_year;
+
     public void setData(Car car) {
-        car_name.setText(car.getManufacturerAndModel());
+        car_name.setText(car.getLongCarName());
         car_price.setText("Rs. " + car.getStartingPrice());
+        car_year.setText(car.getYear());
 
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(car.getImageSource())));
         car_image.setImage(image);
