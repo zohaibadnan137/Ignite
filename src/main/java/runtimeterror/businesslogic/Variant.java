@@ -26,7 +26,7 @@ public class Variant {
     public int getEngineCapacity() {
         return engine_capacity;
     }
-
+    
     public String getTransmission() {
         return transmission;
     }

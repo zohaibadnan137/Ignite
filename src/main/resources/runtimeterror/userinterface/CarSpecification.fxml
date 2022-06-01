@@ -9,11 +9,16 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="600.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.CarSpecificationEventHandler">
    <children>
+      <Button layoutX="225.0" layoutY="573.0" mnemonicParsing="false" onAction="#bookCar" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Book" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Button>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #9d131f;">
          <children>
             <Label alignment="CENTER" layoutX="14.0" layoutY="10.0" prefHeight="30.0" prefWidth="125.0" text="I G N I T E" textFill="WHITE">
@@ -21,170 +26,171 @@
                   <Font name="SansSerif Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="513.0" layoutY="17.0" text="Main Menu" textFill="WHITE">
+            <Label layoutX="513.0" layoutY="17.0" onMouseClicked="#loadMainMenu" text="Main Menu" textFill="WHITE">
                <font>
                   <Font name="SansSerif Bold" size="14.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="130.0" layoutX="170.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+      <VBox alignment="CENTER" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="car_name" text="2018 Honda Civic" textFill="#9d131f">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="150.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="fuel_tank_capacity" text="47 L" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="weight" text="1247 kg" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="325.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="variant_one_name" text="MT" wrapText="true" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_two_name" text="CVT" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_one_engine_capacity" text="2000 cc" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_two_engine_capacity" text="2000 cc" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_one_transmission" text="Manual" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_two_transmission" text="Automatic" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_one_horsepower" text="158 hp" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_two_horsepower" text="158 hp" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_one_zero_to_sixty" text="0-60 in 5.8 s" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_two_zero_to_sixty" text="0-60 in 6.1 s" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_one_price" text="Rs. 3,360,000" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="variant_two_price" text="Rs. 3,560,000" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <ImageView fx:id="car_image" fitHeight="227.0" fitWidth="313.0" layoutX="149.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@honda_civic.png" />
+            <Image url="@2018_honda_civic.png" />
          </image>
       </ImageView>
-      <Label fx:id="car_name" layoutX="205.0" layoutY="217.0" text="2014 Honda Civic" textFill="#9d131f">
-         <font>
-            <Font name="SansSerif Bold" size="24.0" />
-         </font>
-         <padding>
-            <Insets top="5.0" />
-         </padding>
-      </Label>
-      <GridPane layoutX="225.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="150.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label fx:id="fuel_tank_capacity" text="50 L" GridPane.halignment="CENTER">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name11" text="1300 Kg" GridPane.columnIndex="1" GridPane.halignment="CENTER">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-         </children>
-      </GridPane>
-      <GridPane layoutX="137.0" layoutY="300.0" prefHeight="300.0" prefWidth="325.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label fx:id="car_name111" text="VTI Oriel" wrapText="true" GridPane.halignment="CENTER">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name1111" text="VTI Oriel CVT" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name1112" text="1800cc" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name11121" text="1800cc" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name11122" text="Manual" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name111221" text="Automatic" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name111222" text="150hp" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name1112221" text="160hp" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name1112222" text="0-60 in 5.3s" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name11122221" text="0-60 in 5.1s" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name11122222" text="Rs. 3500000" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="5">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-            <Label fx:id="car_name11122223" text="Rs. 3800000" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
-               <font>
-                  <Font name="SansSerif Regular" size="18.0" />
-               </font>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </Label>
-         </children>
-      </GridPane>
-      <Line endX="141.5" endY="577.0" layoutX="158.0" layoutY="13.0" startX="141.5" startY="303.66668701171875" strokeWidth="1.5" />
-      <Button layoutX="225.0" layoutY="621.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Book" textFill="WHITE">
-         <font>
-            <Font name="SansSerif Regular" size="14.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

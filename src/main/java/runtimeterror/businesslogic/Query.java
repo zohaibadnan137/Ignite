@@ -48,5 +48,4 @@ public class Query {
     private void closeQuery() {
         status = "Closed";
     }
-
 }

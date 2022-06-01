@@ -4,10 +4,10 @@ import runtimeterror.utilities.IdDispenser;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Car {
     private final int car_id;
-
     private final String year;
     private final String manufacturer;
     private final String model;
@@ -15,6 +15,8 @@ public class Car {
     private final int weight;
     private final ArrayList<Variant> variants;
     private final String image_source;
+
+    private final ArrayList<String> colors;
 
     public Car(String year, String manufacturer, String model, int fuel_tank_capacity, int weight, String image_source) throws FileNotFoundException {
         this.car_id = IdDispenser.getID();
@@ -25,6 +27,7 @@ public class Car {
         this.weight = weight;
         variants = new ArrayList<>();
         this.image_source = image_source;
+        colors = new ArrayList<>();
     }
 
     public int getCarId() {
@@ -77,5 +80,21 @@ public class Car {
     public void addVariant(String variant_name, int engine_capacity, String transmission, int horsepower, double zero_to_sixty, int price) {
         Variant var = new Variant(car_id, variant_name, engine_capacity, transmission, horsepower, zero_to_sixty, price);
         variants.add(var);
+    }
+
+    public void addColor(String color) {
+        colors.add(color);
+    }
+
+    public ArrayList<String> getColors() {
+        return colors;
+    }
+
+    public Variant getVariant(String variant_name) {
+        for (Variant variant : variants)
+            if (Objects.equals(variant.getVariantName(), variant_name))
+                return variant;
+
+        return null;
     }
 }

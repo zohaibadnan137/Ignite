@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class ComplaintList {
     private final ArrayList<Complaint> complaints;
 
-    ComplaintList() {
+    public ComplaintList() {
         complaints = new ArrayList<>();
     }
 

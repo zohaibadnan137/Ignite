@@ -8,6 +8,8 @@ public class Dealership {
     private final ComplaintList complaints;
     private final QueryList queries;
 
+    private final BookingList bookings;
+
     public Dealership(String name) {
         this.name = name;
         customers = new CustomerList();
@@ -15,23 +17,13 @@ public class Dealership {
         catalogue = new Catalogue();
         complaints = new ComplaintList();
         queries = new QueryList();
+        bookings = new BookingList();
     }
 
     public String getName() {
         return name;
     }
 
-    /*public Customer authenticateCustomer(String username, String password) {
-        return customers.authenticateCustomer(username, password);
-    }
-
-    public Employee authenticateEmployee(String username, String password) {
-        return employees.authenticateEmployee(username, password);
-    }
-
-    public void addCustomer(String customer_name, int customer_account_number, String username, String password) throws FileNotFoundException {
-        this.customers.addCustomer(customer_name, customer_account_number, username, password);
-    }*/
     public CustomerList getCustomers() {
         return customers;
     }
@@ -50,6 +42,10 @@ public class Dealership {
 
     public QueryList getQueries() {
         return queries;
+    }
+
+    public BookingList getBookings() {
+        return bookings;
     }
 }
 

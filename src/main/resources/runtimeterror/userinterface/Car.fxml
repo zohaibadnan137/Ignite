@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="250.0" styleClass="car" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.CarEventHandler">
     <children>
-        <ImageView fx:id="car_image" fitHeight="170.0" fitWidth="250.0" layoutX="12.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="car_image" fitHeight="170.0" fitWidth="250.0" layoutX="12.0" layoutY="20.0" onMouseClicked="#loadCarSpecifications" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@2018_honda_civic.png" />
             </image>

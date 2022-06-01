@@ -16,7 +16,7 @@ public class Main extends Application {
         TestDataLoader test_data_loader = new TestDataLoader();
         test_data_loader.loadData();
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Catalogue.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SplashScreen.fxml")));
         primaryStage.setTitle("Ignite");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);

@@ -23,7 +23,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#redirect" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #FFF; -fx-background-radius: 5;" text="Main Menu" textFill="#9d131f" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <font>
-                  <Font name="SansSerif Regular" size="18.0" />
+                  <Font name="SansSerif Regular" size="14.0" />
                </font>
             </Button>
             <Label text="I G N I T E" textFill="WHITE" GridPane.halignment="CENTER">
@@ -33,7 +33,7 @@
             </Label>
             <Label text="Complaint successfully filed!" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
-                  <Font name="SansSerif Regular" size="24.0" />
+                  <Font name="SansSerif Regular" size="18.0" />
                </font>
             </Label>
          </children>

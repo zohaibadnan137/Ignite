@@ -4,6 +4,9 @@ public class ObjectHolder {
     private Customer customer;
     private Employee employee;
     private Car car;
+    private Booking booking;
+    private Variant variant;
+    private String color;
 
     private static final ObjectHolder INSTANCE = new ObjectHolder();
 
@@ -36,5 +39,29 @@ public class ObjectHolder {
 
     public Car getCar() {
         return car;
+    }
+
+    public void setBooking(Booking booking) {
+        this.booking = booking;
+    }
+
+    public Booking getBooking() {
+        return booking;
+    }
+
+    public void setVariant(Variant variant) {
+        this.variant = variant;
+    }
+
+    public Variant getVariant() {
+        return variant;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
     }
 }

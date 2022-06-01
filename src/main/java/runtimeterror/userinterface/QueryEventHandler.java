@@ -8,6 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import runtimeterror.businesslogic.DealershipFactory;
+import runtimeterror.businesslogic.ObjectHolder;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -19,6 +21,8 @@ public class QueryEventHandler {
 
     @FXML
     private void redirect(ActionEvent event) throws IOException {
+        DealershipFactory.getDealership().getQueries().addQuery(ObjectHolder.getInstance().getCustomer().getCustomerId(), queryInput.getText());
+
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QuerySuccess.fxml")));
         Stage primaryStage = new Stage();
         primaryStage.setTitle("Query Success");

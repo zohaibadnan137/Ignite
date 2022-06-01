@@ -48,7 +48,7 @@ public class CustomerMenuEventHandler {
     private void browseCatalogue(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Catalogue.fxml")));
         Stage primaryStage = new Stage();
-        primaryStage.setTitle("File a Complaint");
+        primaryStage.setTitle("Catalogue");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
         primaryStage.show();

@@ -42,7 +42,7 @@ public class CustomerLoginEventHandler {
 
                 Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CustomerMenu.fxml")));
                 Stage primaryStage = new Stage();
-                primaryStage.setTitle("Customer Login");
+                primaryStage.setTitle("Customer Menu");
                 primaryStage.setScene(new Scene(root));
                 primaryStage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
