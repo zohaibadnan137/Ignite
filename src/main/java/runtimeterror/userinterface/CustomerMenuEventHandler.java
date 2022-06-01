@@ -54,4 +54,28 @@ public class CustomerMenuEventHandler {
         primaryStage.show();
         ((Node) (event.getSource())).getScene().getWindow().hide();
     }
+
+    @FXML
+    private void manageBookings(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ManageBookings.fxml")));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("Manage Bookings");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        ((Node) (event.getSource())).getScene().getWindow().hide();
+    }
+
+    @FXML
+    private void logout(ActionEvent event) throws IOException {
+        ObjectHolder.getInstance().reset();
+
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CustomerLogin.fxml")));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("Customer Login");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        ((Node) (event.getSource())).getScene().getWindow().hide();
+    }
 }

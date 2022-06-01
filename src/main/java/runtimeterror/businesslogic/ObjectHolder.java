@@ -64,4 +64,13 @@ public class ObjectHolder {
     public String getColor() {
         return color;
     }
+
+    public void reset() {
+        customer = null;
+        employee = null;
+        car = null;
+        booking = null;
+        variant = null;
+        color = "NULL";
+    }
 }

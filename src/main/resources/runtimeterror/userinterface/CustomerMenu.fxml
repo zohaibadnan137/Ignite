@@ -57,7 +57,7 @@
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Manage bookings" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#manageBookings" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Manage bookings" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
@@ -88,6 +88,11 @@
                </font>
             </Button>
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #d3d3d3;; -fx-background-radius: 5;" text="Vew complaint history" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Logout" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>

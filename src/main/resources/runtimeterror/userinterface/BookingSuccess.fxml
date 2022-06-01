@@ -29,7 +29,7 @@
                   <Font name="SansSerif Bold" size="36.0" />
                </font>
             </Label>
-            <Label text="Booking successful!" textFill="#9d131f" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Label text="Booking successful!" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font name="SansSerif Regular" size="18.0" />
                </font>
@@ -53,7 +53,7 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="booking_id" text="1234" textFill="#9d131f" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                  <Label fx:id="booking_id" text="1234" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -63,7 +63,7 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="name" text="Zohaib Adnan" textFill="#9d131f" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                  <Label fx:id="name" text="Zohaib Adnan" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -73,7 +73,7 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="phone_number" text="03080001370" textFill="#9d131f" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                  <Label fx:id="phone_number" text="03080001370" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -83,7 +83,7 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="car_name" text="2018 Honda Civic" textFill="#9d131f" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                  <Label fx:id="car_name" text="2018 Honda Civic" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -93,7 +93,7 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="variant_name" text="MT" textFill="#9d131f" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                  <Label fx:id="variant_name" text="MT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -103,7 +103,7 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="color" text="White" textFill="#9d131f" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                  <Label fx:id="color" text="White" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>

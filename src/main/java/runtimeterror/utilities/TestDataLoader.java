@@ -10,6 +10,7 @@ public class TestDataLoader {
     public void loadData() throws FileNotFoundException {
         Dealership dealership = DealershipFactory.getDealership("Ignite");
         dealership.getCustomers().addCustomer("Zohaib", "Adnan", 741, "zohaib", "1234", "03080001370");
+        dealership.getCustomers().addCustomer("Moiz", "Sajid", 692, "moiz", "1234", "12345678");
 
         for (int i = 0; i < 1; i++) {
             Car car = dealership.getCatalogue().addCar("2018", "Honda", "Civic", 47, 1247, "2018_honda_civic.png");

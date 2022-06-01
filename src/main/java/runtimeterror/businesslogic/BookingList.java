@@ -20,9 +20,13 @@ public class BookingList {
         return booking;
     }
 
-    public Booking getBookingsForCustomer() {
-        return null;
-    }
+    public ArrayList<Booking> getBookingsForCustomer(Customer customer) {
+        ArrayList<Booking> customer_bookings = new ArrayList<>();
 
-    ;
+        for (Booking booking : bookings)
+            if (booking.getBookingCustomer().getCustomerId() == customer.getCustomerId())
+                customer_bookings.add(booking);
+
+        return customer_bookings;
+    }
 }

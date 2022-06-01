@@ -51,7 +51,7 @@
             </TextArea>
             <Button mnemonicParsing="false" onAction="#redirect" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #9d131f; -fx-background-radius: 5;" text="Submit" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                <font>
-                  <Font name="SansSerif Regular" size="18.0" />
+                  <Font name="SansSerif Regular" size="14.0" />
                </font>
             </Button>
          </children>

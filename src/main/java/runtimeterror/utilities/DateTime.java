@@ -48,4 +48,9 @@ public class DateTime {
         DateTimeFormatter date_format = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         string_date_time = date_time.format(date_format);
     }
+
+    public String getDate() {
+        DateTimeFormatter date_format = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        return date_time.format(date_format);
+    }
 }

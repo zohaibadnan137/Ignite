@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runtimeterror.userinterface.ManageBookingsEventHandler">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #9d131f;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="10.0" prefHeight="30.0" prefWidth="125.0" text="I G N I T E" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="713.0" layoutY="17.0" onMouseClicked="#loadMainMenu" text="Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="15.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="770.0" stylesheets="@styles.css">
+         <content>
+            <TableView fx:id="table" prefHeight="300.0">
+               <columns>
+                  <TableColumn fx:id="booking_id" prefWidth="100.0" text="Booking ID" />
+                  <TableColumn fx:id="date" prefWidth="150.0" text="Date" />
+                  <TableColumn fx:id="year" prefWidth="100.0" text="Year" />
+                  <TableColumn fx:id="manufacturer" prefWidth="150.0" text="Manufacturer" />
+                  <TableColumn fx:id="model" prefWidth="150.0" text="Model" />
+                  <TableColumn fx:id="color" prefWidth="100.0" text="Color" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
